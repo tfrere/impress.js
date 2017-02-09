@@ -35,12 +35,12 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1446"
+     inkscape:window-width="1440"
      inkscape:window-height="762"
      id="namedview46"
      showgrid="false"
      inkscape:zoom="1.0042553"
-     inkscape:cx="348.071"
+     inkscape:cx="658.74897"
      inkscape:cy="211.1017"
      inkscape:window-x="1"
      inkscape:window-y="45"
@@ -49,8 +49,8 @@
   <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
   <circle
      transform="scale(1,-1)"
-     cy="-130.75708"
-     cx="618.75232"
+     cy="-96.901146"
+     cx="674.51501"
      id="circle4324"
      style="opacity:1;fill:#f08c9e;fill-opacity:1;stroke:#ffffff;stroke-width:4.42782784;stroke-opacity:1"
      r="68.340523" />
@@ -176,39 +176,39 @@
      font-weight="bold"
      style="font-weight:bold;font-size:12px;font-family:Helvetica-Bold, Helvetica;fill:#529599;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1">Accompagnement</text>
   <circle
-     style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:14.303;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"
+     style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:14.30300045;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
      id="circle4373"
-     cx="632.81085"
-     cy="-377.02258"
+     cx="605.92523"
+     cy="-253.548"
      transform="scale(1,-1)"
      r="50.979218" />
   <text
-     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:23.24374962px;line-height:125%;font-family:Helvetica;-inkscape-font-specification:'Helvetica, Bold';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#38686b;fill-rule:evenodd;stroke:none;stroke-width:1;fill-opacity:1;"
+     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:23.24374962px;line-height:125%;font-family:Helvetica;-inkscape-font-specification:'Helvetica, Bold';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#38686b;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1"
      font-weight="normal"
      font-size="12"
      id="text4581"
-     x="197.41527"
-     y="-47.847511"
+     x="170.52968"
+     y="-171.3221"
      sodipodi:linespacing="125%">
     <tspan
        id="tspan4583"
-       y="374.42126"
-       x="608.06195"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:23.24374962px;line-height:125%;font-family:Helvetica;-inkscape-font-specification:'Helvetica, Bold';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#38686b;fill-opacity:1;">SOS</tspan>
+       y="250.94669"
+       x="581.17633"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:23.24374962px;line-height:125%;font-family:Helvetica;-inkscape-font-specification:'Helvetica, Bold';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#38686b;fill-opacity:1">SOS</tspan>
   </text>
   <text
-     y="-22.953447"
-     x="155.6017"
+     y="-146.42802"
+     x="128.71611"
      id="text4585"
      font-size="12"
      font-weight="normal"
-     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:23.24374962px;line-height:125%;font-family:Helvetica;-inkscape-font-specification:'Helvetica, Bold';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#38686b;fill-rule:evenodd;stroke:none;stroke-width:1;fill-opacity:1;"
+     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:23.24374962px;line-height:125%;font-family:Helvetica;-inkscape-font-specification:'Helvetica, Bold';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#38686b;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1"
      sodipodi:linespacing="125%">
     <tspan
-       x="566.24835"
-       y="399.31534"
+       x="539.36273"
+       y="275.84076"
        id="tspan4587"
-       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:23.24374962px;line-height:125%;font-family:Helvetica;-inkscape-font-specification:'Helvetica, Bold';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#38686b;fill-opacity:1;">sage femme</tspan>
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:23.24374962px;line-height:125%;font-family:Helvetica;-inkscape-font-specification:'Helvetica, Bold';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#38686b;fill-opacity:1">sage femme</tspan>
   </text>
   <circle
      style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:14.303;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none"

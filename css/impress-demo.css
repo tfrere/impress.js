@@ -136,6 +136,12 @@ table {
 
 /* Others
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.center {
+  text-align: center!important;
+  transform: none!important;
+}
+
 .number {
   text-align: left;
   transform: translateX(140px);

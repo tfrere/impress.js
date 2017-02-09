@@ -34,26 +34,29 @@
       <!-- <h1>Bonjour</h1> -->
     </div>
     <div class="step" data-x="0" data-y="4000" data-scale="6">
-      <h1 class="big-title">La naissance</h1>
+      <div class="number center">
+        <h1 class="color count-to-0-1">0</h1>
+        <small class="sub-title big-sub"><b>Millions</b> de grossesses</small>
+      </div>
     </div>
     <div  class="step" data-x="0" data-y="8000" data-scale="6">
       <div class="two-cols">
-        <div class="wrapper">
-          <div class="number">
-            <h1 class="color count-to-1-1">0</h1>
-            <small class="sub-title big-sub"><b>Naissances</b> dans le monde</small>
-          </div>
-        </div>
         <div class="wrapper">
           <div class="number">
             <h1 class="color count-to-1-2">0</h1>
             <small class="sub-title big-sub"><b>Naissances</b> en france</small>
           </div>
         </div>
+        <div class="wrapper">
+          <div class="number">
+            <h1 class="color count-to-1-1">0</h1>
+            <small class="sub-title big-sub"><b>Naissances</b> dans le monde</small>
+          </div>
+        </div>
       </div>
     </div>
     <div class="step" data-x="0" data-y="12000" data-scale="6">
-      <h1 class="big-title">La grossesse</h1><h1> n'est pas un long fleuve tranquille</h1>
+      <h1 class="big-title">La grossesse</h1><h1> un heureux évennement ?</h1>
     </div>
     <div class="step" data-x="0" data-y="16000" data-scale="6">
       <div class="three-cols">
@@ -126,14 +129,29 @@
     </div>
     <div class="step" data-x="0" data-y="40000" data-scale="3">
       <small class="big-sub sub-title">Acquisition</small>
-      <h1>Live stream</h1>
-      <small class="big-sub sub-title"><b>Emission en ligne</b> d’echange<br/> avec des <b>experts medicaux</b></small>
+
+      <div class="two-cols">
+        <div class="wrapper">
+          <!-- <img style="margin: 0 auto;margin-bottom: 20px; display:block;" width="150px" src="stethoscope.svg"/></img> -->
+          <div class="circle first">
+            <h6>Live stream</h6>
+            <small class="big-sub sub-title">Echange avec des <b>experts medicaux</b></small>
+          </div>
+        </div>
+        <div class="wrapper">
+          <!-- <img style="margin: 0 auto;margin-bottom: 20px; display:block;" width="150px" src="stethoscope.svg"/></img> -->
+          <div class="circle last">
+            <h6>Vente privée</h6>
+            <small class="big-sub sub-title"><b>Vente flash</b> d'abonnement</small>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="step" data-x="0" data-y="45000" data-scale="3">
       <small class="big-sub sub-title">Business Model</small>
       <h1 class="big-title">B2C</h1>
-      <small class="big-sub sub-title"><b>Abonnement 15€ / mois</b><br/>+ 3 mois gratuits</small><br/>
-      <small class="big-sub sub-title">Une femme dépense en moyenne<br/> <b>2000 €</b> par grossesse</small>
+      <small class="big-sub sub-title">Abonnement <b>15€ / mois</b><br/> + <b>sauvegarde</b> des donnees de sante<br/>+ <b>3 mois gratuits</b> après acouchement</small>
+      <!-- <small class="big-sub sub-title">Une femme dépense en moyenne<br/> <b>2000 €</b> par grossesse</small> -->
     </div>
     <div class="small step" data-x="0" data-y="50000" data-scale="3">
       <!-- <h6>L'équipe</h6> -->
@@ -261,7 +279,21 @@
       var activeCounter = function() {
         $(".sunburst").addClass("-hidden");
         window.setTimeout(function(){
-          if($("#step-3.active").length) {
+          if($("#step-2.active").length) {
+            $(".active .count-to-0-1").counter({
+              autoStart: true,
+              duration: 1500,
+              countFrom: 0,
+              countTo: 1000000,
+              runOnce: true,
+              placeholder: "0",
+              easing: "easeOutExpo",
+              numberFormatter: function(number) {
+                return numberWithSpaces( number );
+              }
+            });
+          }
+          else if($("#step-3.active").length) {
             $(".active .count-to-1-1").counter({
               autoStart: true,
               duration: 1500,
@@ -331,16 +363,7 @@
           }
           else if($("#step-13.active").length)
           {
-
-            var endTime = moment(new Date());
-            var duration = moment.duration(endTime.diff(startTime));
-            var nbNbaby = 0;
-            console.log(duration.format("h:mm:ss"));
-            duration = duration.format("h:mm:ss");
-            nbBaby = duration * 1;
-
-            $(".nb-baby").html(nbBaby);
-
+            calcNbBaby();
             $(".sunburst").removeClass("-hidden");
           }
           if($("#step-1.active").length || $("#step-7.active").length || $("#step-14.active").length || $("#title.active").length ) {
@@ -348,6 +371,36 @@
           }
         }, 500);
       }
+
+      var oldNbBaby = 0;
+
+      var calcNbBaby = function() {
+        var endTime = moment(new Date());
+        var duration = moment.duration(endTime.diff(startTime));
+        var nbNbaby = 0;
+        console.log(duration.format("h:mm:ss"));
+        duration = duration.format("h:mm:ss");
+        nbBaby = duration * 4;
+        $(".nb-baby").counter({
+          autoStart: true,
+          duration: 1500,
+          countFrom: oldNbBaby,
+          countTo: nbBaby,
+          runOnce: true,
+          placeholder: "0",
+          easing: "easeOutExpo",
+          numberFormatter: function(number) {
+            return numberWithSpaces( number );
+          }
+        });
+        $(".nb-baby").html(nbBaby * 4);
+        oldNbBaby = nbBaby;
+
+      };
+
+      window.setInterval(function() {
+        calcNbBaby();
+      }, 1500);
 
       $("body").keydown(function (event) {
         keyReport(event);
