@@ -9,7 +9,7 @@
     <meta name="description" content="Ciconia est une app d'accompagnement de la femme enceinte pendant la grossesse" />
     <meta name="author" content="Ciconia" />
 
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:light,regular,semibold,bold,black,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
 
     <link href="css/impress-demo.css" rel="stylesheet" />
 
@@ -19,12 +19,13 @@
 
 <body class="impress-not-supported">
 
-<!--
-    For example this fallback message is only visible when there is `impress-not-supported` class on body.
--->
-<div class="fallback-message">
-    <p>Désolé, votre navigateur ne prends pas en charge notre présentation. Pour en profiter, vous pouvez vous télécharger un vrai navigateur.</p>
+<div class="sunburst -hidden">
+  <div class="outer">
+    <b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b>
+  </div>
 </div>
+
+<div id="fullscreen" onclick="requestFullScreen()"></div>
 
 <div id="impress">
 
@@ -33,79 +34,108 @@
       <!-- <h1>Bonjour</h1> -->
     </div>
     <div class="step" data-x="0" data-y="4000" data-scale="6">
-      <h3>La naissance </h3>
+      <h1 class="big-title">La naissance</h1>
     </div>
     <div  class="step" data-x="0" data-y="8000" data-scale="6">
       <div class="two-cols">
         <div class="wrapper">
-          <h1 class="color count-to">0</h1>
-          <h4>Naissances dans le monde</h4>
+          <div class="number">
+            <h1 class="color count-to-1-1">0</h1>
+            <small class="sub-title big-sub"><b>Naissances</b> dans le monde</small>
+          </div>
         </div>
         <div class="wrapper">
-          <h1 class="color count-to-2">0</h1>
-          <h4>Naissances en france</h4>
+          <div class="number">
+            <h1 class="color count-to-1-2">0</h1>
+            <small class="sub-title big-sub"><b>Naissances</b> en france</small>
+          </div>
         </div>
       </div>
     </div>
     <div class="step" data-x="0" data-y="12000" data-scale="6">
-      <h4>La grossesse n'est pas un long fleuve tranquille</h4>
+      <h1 class="big-title">La grossesse</h1><h1> n'est pas un long fleuve tranquille</h1>
     </div>
     <div class="step" data-x="0" data-y="16000" data-scale="6">
-      <h4>50% Anxiété prénatale</h4>
-      <h4>34% Dépression prénatale</h4>
-      <h4>20% Dépression postnatale</h4>
+      <div class="three-cols">
+        <div class="wrapper">
+          <div class="number">
+            <h1 class="color count-to-2-1">50%</h1>
+            <small class="sub-title big-sub"><b>Anxiété</b> prénatale</small>
+          </div>
+        </div>
+        <div class="wrapper">
+          <div class="number">
+            <h1 class="color count-to-2-2">34%</h1>
+            <small class="sub-title big-sub"><b>Dépression</b> prénatale</small>
+          </div>
+        </div>
+        <div class="wrapper">
+          <div class="number">
+            <h1 class="color count-to-2-3">20%</h1>
+            <small class="sub-title big-sub"><b>Dépression</b> postnatale</small>
+          </div>
+        </div>
+      </div>
+
     </div>
     <!-- <div class="step" data-x="0" data-y="16000" data-scale="6">
       <h4>Je ne vais plus m’informer sur doctissimo, j’ai trop peur de ce que j’y apprendrai</h4>
       <p>- Tifaine, 24 ans</p>
     </div> -->
 
-    <div class="step" data-x="0" data-y="20000" data-scale="3">
-      <!-- <h6 style="text-align:center;">Les problemes</h6> -->
+    <div class="step" data-x="0" data-y="20000" data-scale="6">
+      <h2 style="text-align:center;">Pourquoi ces crises ? </h2>
       <div class="two-cols">
         <div class="wrapper">
-          <img style="margin: 0 auto;margin-bottom: 20px; display:block;" width="150px" src="stethoscope.svg"/></img>
-          <h6>Coté femme</h6>
-          <ul>
-            <li>Trop d’informations</li>
-            <li>Manque de contexte</li>
-            <li>Anxiétée</li>
-          </ul>
+          <!-- <img style="margin: 0 auto;margin-bottom: 20px; display:block;" width="150px" src="stethoscope.svg"/></img> -->
+          <div class="circle first">
+            <h6>Coté femme</h6>
+            <ul>
+              <li>Manque de contexte de l'info</li>
+              <li>Trop de suivi</li>
+              <li>Questionnement</li>
+            </ul>
+          </div>
         </div>
         <div class="wrapper">
-          <img style="margin: 0 auto;margin-bottom: 20px; display:block;" width="150px" src="stethoscope.svg"/></img>
-          <h6>Coté médecin</h6>
-          <ul>
-            <li>Défaut de communication</li>
-            <li>Manque de temps</li>
-            <li>Peu de suivi psy</li>
-          </ul>
+          <!-- <img style="margin: 0 auto;margin-bottom: 20px; display:block;" width="150px" src="stethoscope.svg"/></img> -->
+          <div class="circle last">
+            <h6>Coté médecin</h6>
+            <ul>
+              <li>Manque de temps</li>
+              <li>Défaut de communication</li>
+              <li>Intervention psy tardive</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
 
     <div class="step" data-x="0" data-y="25000" data-scale="6">
-      <!-- <h4>Ce qui existe</h4> -->
-      <img style="margin: 0 auto; display:block;" width="800px" src="graphCiconia.svg"/></img>
+      <img style="margin: 0 auto; display:block;" width="1200px" src="graphCiconia.svg"/></img>
     </div>
 
-    <div class="step" data-x="0" data-y="30000" data-scale="6">
-      <h6>Notre réponse</h6>
+    <div class="step" data-x="0" data-y="30000" data-scale="3">
       <h1 class="big-title">Ciconia</h1>
-      <small class="big-sub sub-title">Devenir actrice de sa grossesse</small>
+      <small class="big-sub sub-title">Rendre la femme <b class='rotate'>actrice</b><br/> de sa grossesse</small>
     </div>
-    <div class="step" data-x="0" data-y="35000" data-scale="6">
-      <h6>Business Model</h6>
+    <div class="step" data-x="0" data-y="35000" data-scale="3">
+      <img style="display:inline-block;" width="300px" src="screen1.png"/></img>
+      <img style="display:inline-block;" width="300px" src="screen2.jpg"/></img>
+
+    </div>
+    <div class="step" data-x="0" data-y="40000" data-scale="3">
+      <small class="big-sub sub-title">Acquisition</small>
+      <h1>Live stream</h1>
+      <small class="big-sub sub-title"><b>Emission en ligne</b> d’echange<br/> avec des <b>experts medicaux</b></small>
+    </div>
+    <div class="step" data-x="0" data-y="45000" data-scale="3">
+      <small class="big-sub sub-title">Business Model</small>
       <h1 class="big-title">B2C</h1>
-      <small class="big-sub sub-title">Abonnement 15€ / mois</small><br/>
-      <small class="big-sub sub-title">Une femme dépense en moyenne 2000 € par grossesse</small>
+      <small class="big-sub sub-title"><b>Abonnement 15€ / mois</b><br/>+ 3 mois gratuits</small><br/>
+      <small class="big-sub sub-title">Une femme dépense en moyenne<br/> <b>2000 €</b> par grossesse</small>
     </div>
-    <div class="step" data-x="0" data-y="40000" data-scale="6">
-      <h6>Acquisition</h6>
-      <h1>Plateforme d'échange</h1>
-      <small class="big-sub sub-title">Dialogue entre les patients et le personnel médical</small>
-    </div>
-    <div class="step" data-x="0" data-y="46000" data-scale="6">
+    <div class="small step" data-x="0" data-y="50000" data-scale="3">
       <!-- <h6>L'équipe</h6> -->
     <div class="guy">
       <img src="mina.jpg"/></img>
@@ -125,7 +155,7 @@
     <div class="guy">
       <img src="steph.jpg"/></img>
       <h6>Steph</h6>
-      <small>Developpeuse</small>
+      <small>Developpeur</small>
     </div>
     <div class="guy">
       <img src="kwame.jpg"/></img>
@@ -152,9 +182,10 @@
       <h6>Ouverture et ambition</h6>
       <p>Pour la suite on va faire ça = = = = =  =</p>
     </div> -->
-    <div class="step" data-x="0" data-y="52000" data-scale="6">
-      <h1>Merci !</h1>
+    <div class="step" data-x="0" data-y="53000" data-scale="3">
+      <h1 class="big-title">Merci !</h1>
       <h5 class="big-sub sub-title">contact@ciconia.io</h5>
+      <h6 class="big-sub sub-title"><b><span class="nb-baby"></span> Bébés sont nés</b><br/> pendant cette présentation</h6>
     </div>
     <div class="step" data-x="0" data-y="0" data-scale="50"></div>
 
@@ -175,136 +206,197 @@
         <p>one more thing...</p>
     </div> -->
 
-<div class="hint">
-    <p>Use a spacebar or arrow keys to navigate</p>
-</div>
-<script>
-if ("ontouchstart" in document.documentElement) {
-    document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
-}
-</script>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.easing.js"></script>
+    <script src="js/jquery.countto.js"></script>
+    <script src="js/moment.js"></script>
+    <script src="js/impress.js"></script>
+    <script>
 
-<!--
+      var impress = impress().init();
+      var startTime = moment(new Date());
 
-    Last, but not least.
-
-    To make all described above really work, you need to include impress.js in the page.
-    I strongly encourage to minify it first.
-
-    In here I just include full source of the script to make it more readable.
-
-    You also need to call a `impress().init()` function to initialize impress.js presentation.
-    And you should do it in the end of your document. Not only because it's a good practice, but also
-    because it should be done when the whole document is ready.
-    Of course you can wrap it in any kind of "DOM ready" event, but I was too lazy to do so ;)
-
--->
-<script src="js/jquery.js"></script>
-<script src="js/jquery.easing.js"></script>
-<script src="js/jquery.countto.js"></script>
-<script src="js/impress.js"></script>
-<script>
-  var impress = impress().init();
-
-  var activeCounter = function() {
-    window.setTimeout(function(){
-      $(".active .count-to").counter({
-        autoStart: true,
-        duration: 1500,
-        countFrom: 0,
-        countTo: 140000000,
-        runOnce: true,
-        placeholder: "0",
-        easing: "easeOutExpo",
-        numberFormatter: function(number) {
-          return Math.round( number );
-        }
-      });
-    $(".active .count-to-2").counter({
-      autoStart: true,
-      duration: 1500,
-      countFrom: 0,
-      countTo: 800000,
-      runOnce: true,
-      placeholder: "0",
-      easing: "easeOutExpo",
-      numberFormatter: function(number) {
-        return Math.round( number );
+      if ("ontouchstart" in document.documentElement) {
+        document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
       }
-    });
-  }, 500);
-  }
+
+      function requestFullScreen() {
+
+        var el = document.body;
+
+        // Supports most browsers and their versions.
+        var requestMethod = el.requestFullScreen || el.webkitRequestFullScreen
+        || el.mozRequestFullScreen || el.msRequestFullScreen;
+
+        if (requestMethod) {
+
+          // Native full screen.
+          requestMethod.call(el);
+
+        } else if (typeof window.ActiveXObject !== "undefined") {
+
+          // Older IE.
+          var wscript = new ActiveXObject("WScript.Shell");
+
+          if (wscript !== null) {
+            wscript.SendKeys("{F11}");
+          }
+        }
+      }
+
+      $(document).ready(function(){
+        $("#fullscreen").click(function(){
+          requestFullScreen();
+          console.log(1);
+        });
+        $("body").addClass("blue");
+      });
 
 
-  $("body").keydown(function (event) {
-      keyReport(event);
-  });
 
-  function keyReport(event) {
-    if (event.which == 10 || event.which == 13) {
-      event.preventDefault();
-    }
-    switch (event.which) {
-      case 0:
-        console.log("event.which not sure");
-        break;
-      case 32:
-        console.log(" Spacebar");
-        break;
-      case 13:
-        console.log(" Enter");
-        break;
-      case 27:
-        console.log(" Escape");
-        break;
-      case 35:
-        console.log(" End");
-        break;
-      case 36:
-        console.log(" Home");
-        break;
-      case 37:
-        console.log(" Left");
-        break;
-      case 38:
-        console.log(" Up");
-        break;
-      case 39:
-        console.log(" Right");
-        activeCounter();
-        break;
-      case 40:
-        console.log(" Down");
-        break;
-    }
-  }
+      var numberWithSpaces = function(x) {
+        return Math.round(x).toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+      }
 
-</script>
+      var activeCounter = function() {
+        $(".sunburst").addClass("-hidden");
+        window.setTimeout(function(){
+          if($("#step-3.active").length) {
+            $(".active .count-to-1-1").counter({
+              autoStart: true,
+              duration: 1500,
+              countFrom: 0,
+              countTo: 140000000,
+              runOnce: true,
+              placeholder: "0",
+              easing: "easeOutExpo",
+              numberFormatter: function(number) {
+                return numberWithSpaces( number );
+              }
+            });
+            $(".active .count-to-1-2").counter({
+              autoStart: true,
+              duration: 1500,
+              countFrom: 0,
+              countTo: 800000,
+              runOnce: true,
+              placeholder: "0",
+              easing: "easeOutExpo",
+              numberFormatter: function(number) {
+                return numberWithSpaces( number );
+              }
+            });
+          }
+          else if($("#step-5.active").length) {
+            $(".active .count-to-2-1").counter({
+              autoStart: true,
+              duration: 1500,
+              countFrom: 0,
+              countTo: 50,
+              runOnce: true,
+              placeholder: "0",
+              easing: "easeOutExpo",
+              numberFormatter: function(number) {
+                return numberWithSpaces( number )+ " %";
+              }
+            });
+            $(".active .count-to-2-2").counter({
+              autoStart: true,
+              duration: 1500,
+              countFrom: 0,
+              countTo: 34,
+              runOnce: true,
+              placeholder: "0",
+              easing: "easeOutExpo",
+              numberFormatter: function(number) {
+                return numberWithSpaces( number )+ " %";
+              }
+            });
+            $(".active .count-to-2-3").counter({
+              autoStart: true,
+              duration: 1500,
+              countFrom: 0,
+              countTo: 20,
+              runOnce: true,
+              placeholder: "0",
+              easing: "easeOutExpo",
+              numberFormatter: function(number) {
+                return numberWithSpaces( number ) + " %";
+              }
+            });
+          }
+          else if($("#step-8.active").length)
+          {
+            $("body").addClass("pink");
+          }
+          else if($("#step-13.active").length)
+          {
 
-<!--
+            var endTime = moment(new Date());
+            var duration = moment.duration(endTime.diff(startTime));
+            var nbNbaby = 0;
+            console.log(duration.format("h:mm:ss"));
+            duration = duration.format("h:mm:ss");
+            nbBaby = duration * 1;
 
-    The `impress()` function also gives you access to the API that controls the presentation.
+            $(".nb-baby").html(nbBaby);
 
-    Just store the result of the call:
+            $(".sunburst").removeClass("-hidden");
+          }
+          if($("#step-1.active").length || $("#step-7.active").length || $("#step-14.active").length || $("#title.active").length ) {
+            $("body").removeClass("pink");
+          }
+        }, 500);
+      }
 
-        var api = impress();
+      $("body").keydown(function (event) {
+        keyReport(event);
+      });
 
-    and you will get three functions you can call:
+      function keyReport(event) {
+        if (event.which == 10 || event.which == 13) {
+          event.preventDefault();
+        }
+        switch (event.which) {
+          case 0:
+          console.log("event.which not sure");
+          break;
+          case 32:
+          console.log(" Spacebar");
+          break;
+          case 13:
+          console.log(" Enter");
+          break;
+          case 27:
+          console.log(" Escape");
+          break;
+          case 35:
+          console.log(" End");
+          break;
+          case 36:
+          console.log(" Home");
+          break;
+          case 37:
+          console.log(" Left");
+          activeCounter();
+          break;
+          case 38:
+          activeCounter();
+          console.log(" Up");
+          break;
+          case 39:
+          console.log(" Right");
+          activeCounter();
+          break;
+          case 40:
+          console.log(" Down");
+          activeCounter();
+          break;
+        }
+      }
 
-        `api.init()` - initializes the presentation,
-        `api.next()` - moves to next step of the presentation,
-        `api.prev()` - moves to previous step of the presentation,
-        `api.goto( stepIndex | stepElementId | stepElement, [duration] )` - moves the presentation to the step given by its index number
-                id or the DOM element; second parameter can be used to define duration of the transition in ms,
-                but it's optional - if not provided default transition duration for the presentation will be used.
+    </script>
 
-    You can also simply call `impress()` again to get the API, so `impress().next()` is also allowed.
-    Don't worry, it wont initialize the presentation again.
+  </body>
 
-    For some example uses of this API check the last part of the source of impress.js where the API
-    is used in event handlers.
-
--->
-
-</body>
 </html>
