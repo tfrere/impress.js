@@ -1,455 +1,167 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=1024" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <title>Ciconia - pitch deck</title>
-
-    <meta name="description" content="Ciconia est une app d'accompagnement de la femme enceinte pendant la grossesse" />
-    <meta name="author" content="Ciconia" />
-
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:light,regular,semibold,bold,black,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
-
-    <link href="css/impress-demo.css" rel="stylesheet" />
-
-    <link rel="shortcut icon" href="favicon.png" />
-    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
-</head>
-
-<body class="impress-not-supported">
-
-<div class="sunburst -hidden">
-  <div class="outer">
-    <b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b>
-  </div>
-</div>
-
-<div id="fullscreen" onclick="requestFullScreen()"></div>
-
-<div id="impress">
-
-    <div id="title" class="step" data-x="0" data-y="0" data-scale="4">
-      <img style="margin: 0 auto; display:block;" width="300px" src="egg2.svg"/></img>
-      <!-- <h1>Bonjour</h1> -->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=1024">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>Design systems</title>
+    <meta name="description" content="Ciconia est une app d'accompagnement de la femme enceinte pendant la grossesse">
+    <meta name="author" content="Ciconia">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:light,regular,semibold,bold,black,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  </head>
+  <body class="impress-not-supported">
+    <div class="sunburst -hidden">
+      <div class="outer"><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b><b></b></div>
     </div>
-    <div class="step" data-x="0" data-y="4000" data-scale="6">
-      <div class="number center">
-        <h1 class="color">1 / 3</h1>
-        <small class="sub-title big-sub"><b>Grossesses</b> arrivant à terme</small>
+    <div id="fullscreen"></div>
+    <canvas id="canvas"></canvas>
+    <div id="impress">
+      <div class="step" id="title" data-x="0" data-y="0" data-scale="3">
+        <h1>Design Systems</h1>
       </div>
-    </div>
-    <div  class="step" data-x="0" data-y="8000" data-scale="6">
-      <div class="two-cols">
-        <div class="wrapper">
-          <div class="number">
-            <h1 class="color count-to-1-2">0</h1>
-            <small class="sub-title big-sub"><b>Naissances</b> en france</small>
-          </div>
-        </div>
-        <div class="wrapper">
-          <div class="number">
-            <h1 class="color count-to-1-1">0</h1>
-            <small class="sub-title big-sub"><b>Naissances</b> dans le monde</small>
-          </div>
-        </div>
+      <div class="step" data-x="0" data-y="6000" data-scale="6">
+        <h4><span class="title-label">I. Introduction </span> The industrialisation of design</h4>
       </div>
-    </div>
-    <div class="step" data-x="0" data-y="12000" data-scale="6">
-      <h1 class="big-title">La grossesse</h1><h1> un heureux évennement ?</h1>
-    </div>
-    <div class="step" data-x="0" data-y="16000" data-scale="6">
-      <div class="three-cols">
-        <div class="wrapper">
-          <div class="number">
-            <h1 class="color count-to-2-1">50%</h1>
-            <small class="sub-title big-sub"><b>Anxiété</b> prénatale</small>
-          </div>
-        </div>
-        <div class="wrapper">
-          <div class="number">
-            <h1 class="color count-to-2-2">34%</h1>
-            <small class="sub-title big-sub"><b>Dépression</b> prénatale</small>
-          </div>
-        </div>
-        <div class="wrapper">
-          <div class="number">
-            <h1 class="color count-to-2-3">20%</h1>
-            <small class="sub-title big-sub"><b>Dépression</b> postnatale</small>
-          </div>
-        </div>
+      <div class="step" data-x="0" data-y="10000" data-scale="6">
+        <ul class="big-list"> 
+          <li class="big-item substep"><img class="big-item-icon" src="images/religion.svg" width="50px"><span class="big-item-label">Religion </span></li>
+          <li class="big-item substep"><img class="big-item-icon" src="images/etat.svg" width="50px"><span class="big-item-label">State   </span></li>
+        </ul>
       </div>
-
-    </div>
-    <!-- <div class="step" data-x="0" data-y="16000" data-scale="6">
-      <h4>Je ne vais plus m’informer sur doctissimo, j’ai trop peur de ce que j’y apprendrai</h4>
-      <p>- Tifaine, 24 ans</p>
-    </div> -->
-
-    <div class="step" data-x="0" data-y="20000" data-scale="6">
-      <h2 style="text-align:center;">Pourquoi ces crises ? </h2>
-      <div class="two-cols">
-        <div class="wrapper">
-          <!-- <img style="margin: 0 auto;margin-bottom: 20px; display:block;" width="150px" src="stethoscope.svg"/></img> -->
-          <div class="circle first">
-            <h6>Coté femme</h6>
+      <div class="step" data-x="0" data-y="14000" data-scale="6"><img src="images/dialog_size.svg"></div>
+      <div class="step" data-x="0" data-y="18000" data-scale="6">
+        <ul class="big-list"> 
+          <li class="big-item substep"><img class="big-item-icon" src="images/circle.svg" width="50px"><span class="big-item-label">Consistency   </span></li>
+          <li class="big-item substep"><img class="big-item-icon" src="images/optimization.svg" width="50px"><span class="big-item-label">Optimization   </span></li>
+          <li class="big-item substep"><img class="big-item-icon" src="images/organization.svg" width="50px"><span class="big-item-label">Organization</span></li>
+        </ul>
+      </div>
+      <div class="step" data-x="0" data-y="25000" data-scale="9">
+        <h4><span class="title-label"> II. Definition</span> What is a design system</h4>
+      </div>
+      <div class="step" data-x="0" data-y="30000" data-scale="9">
+        <h4>Design Sytem <span class="title-label">\di.zajn ˈsɪs.təm\</span></h4>
+        <p>UX and UI reference that all the actors are <i>using</i> for design and develop their products and digital services</p>
+      </div>
+      <div class="step" data-x="0" data-y="35000" data-scale="9">
+        <ul class="big-list">
+          <li class="big-item substep"><img class="big-item-icon" src="images/living.svg" width="50px"><span class="big-item-label">Living</span></li>
+          <li class="big-item substep"><img class="big-item-icon" src="images/agnostic.svg" width="50px"><span class="big-item-label">Agnostic</span></li>
+          <li class="big-item substep"><img class="big-item-icon" src="images/atomic.svg" width="50px"><span class="big-item-label">Atomic</span></li>
+          <li class="big-item substep"><img class="big-item-icon" src="images/universal.svg" width="50px"><span class="big-item-label">Universal</span></li>
+          <li class="big-item substep"><img class="big-item-icon" src="images/accessible.svg" width="50px"><span class="big-item-label">Accessible</span></li>
+        </ul>
+      </div>
+      <div class="step" data-x="0" data-y="45000" data-scale="12">
+        <h4><span class="title-label">III. In production</span> The tool</h4>
+      </div>
+      <div class="step" data-x="0" data-y="55000" data-scale="12">
+        <ul class="big-list">
+          <li class="big-item substep"><img class="big-item-icon" src="images/bible.svg" width="50px"><span class="big-item-label">The truth     </span></li>
+        </ul>
+        <ul class="big-list">
+          <li class="big-item substep"><img class="big-item-icon" src="images/visual.svg" width="50px"><span class="big-item-label">Visual    </span></li>
+          <li class="big-item substep"><img class="big-item-icon" src="images/usage3.svg" width="50px"><span class="big-item-label">Uses</span></li>
+          <li class="big-item substep"><img class="big-item-icon" src="images/layout.svg" width="50px"><span class="big-item-label">Layout    </span></li>
+          <li class="big-item substep"><img class="big-item-icon" src="images/voice.svg" width="50px"><span class="big-item-label">Voice & Tones</span></li>
+          <li class="big-item substep"><img class="big-item-icon" src="images/modular.svg" width="50px"><span class="big-item-label">Modules     </span></li>
+          <li class="big-item substep"><img class="big-item-icon" src="images/resources.svg" width="50px"><span class="big-item-label">Resources    </span></li>
+        </ul>
+      </div>
+      <div class="step" data-x="0" data-y="65000" data-scale="12"><img class="big-item-icon" src="images/medium.gif" style="width:800px;"></div>
+      <div class="step" data-x="0" data-y="75000" data-scale="12"><img class="big-item-icon" src="images/usage.gif" style="width:800px;"></div>
+      <div class="step" data-x="0" data-y="85000" data-scale="12"><img class="big-item-icon" src="images/layout.gif" style="width:800px;"></div>
+      <div class="step" data-x="0" data-y="95000" data-scale="12"><img class="big-item-icon" src="images/voicesandtones2.gif" style="width:800px;"></div>
+      <div class="step" data-x="0" data-y="105000" data-scale="12"><img class="big-item-icon" src="images/modules.gif" style="width:800px;"></div>
+      <div class="step" data-x="0" data-y="115000" data-scale="12"><img class="big-item-icon" src="images/resources.gif" style="width:800px;"></div>
+      <div class="step" data-x="0" data-y="125000" data-scale="15">
+        <h4><span class="title-label">IV. Conclusion</span> Luxemburger Wort</h4>
+      </div>
+      <div class="step" data-x="0" data-y="135000" data-scale="15">
+        <ul class="big-list">
+          <li class="big-item substep"><span class="big-item-number count-to-0-0">~50</span><span class="big-item-label">People directly involved</span></li>
+          <li class="big-item substep"><span class="big-item-number count-to-0-1">4  </span><span class="big-item-label">Areas of expertise</span></li>
+          <li class="big-item substep"><span class="big-item-number count-to-0-2">4  </span><span class="big-item-label">Spoken languages</span></li>
+          <li class="big-item substep"><span class="big-item-number count-to-0-3">4  </span><span class="big-item-label">Editions</span></li>
+          <li class="big-item substep"><span class="big-item-number count-to-0-4">~1M</span><span class="big-item-label">Daily unique users</span></li>
+        </ul>
+      </div>
+      <div class="small step" data-x="0" data-y="145000" data-scale="18">
+        <h4><span class="title-label">V. References and links</span> To go deeper</h4>
+      </div>
+      <div class="small step final" data-x="0" data-y="160000" data-scale="18">
+        <h5 class="substep"><a href="#">http://designsystem.tfrere.fr/</a></h5>
+        <ul class="big-list text-left">
+          <li class="big-list-item substep" style="width:500px;margin-right: 40px;">
+            <div>
+              <h6>Authors</h6>
+            </div>
             <ul>
-              <li>Manque de contexte de l'info</li>
-              <li>Peu de suivi</li>
-              <li>Questionnement</li>
+              <li><a href="http://bradfrost.com/">Brad Frost</a></li>
+              <li><a href="http://www.craftui.com/">Alla Kholmatova</a></li>
+              <li><a href="http://davegamache.com/">Dave Gamache</a></li>
             </ul>
-          </div>
-        </div>
-        <div class="wrapper">
-          <!-- <img style="margin: 0 auto;margin-bottom: 20px; display:block;" width="150px" src="stethoscope.svg"/></img> -->
-          <div class="circle last">
-            <h6>Coté médecin</h6>
+          </li>
+          <li class="big-list-item substep" style="width:450px;margin-right: 40px;">
+            <div>
+              <h6>Refs</h6>
+            </div>
             <ul>
-              <li>Manque de temps</li>
-              <li>Défaut de communication</li>
-              <li>Intervention psy tardive</li>
+              <li><a href="http://styleguides.io/">Styleguides</a></li>
+              <li><a href="http://atomicdesign.bradfrost.com/chapter-1/">Atomic design</a></li>
+              <li><a href="http://atomicdesign.bradfrost.com/chapter-1/">Design systems</a></li>
+              <li><a href="https://en.wikipedia.org/wiki/Corporate_identity">Corporate Id</a></li>
             </ul>
-          </div>
-        </div>
+          </li>
+          <li class="big-list-item substep" style="width:250px;margin-right: 40px;">
+            <div>
+              <h6>DSLs</h6>
+            </div>
+            <ul>
+              <li><a href="https://material.io/guidelines/">Google</a></li>
+              <li><a href="https://airbnb.design/the-way-we-build/">AirBnB</a></li>
+              <li><a href="http://codeforamerica.clearleft.com/">US GOV</a></li>
+              <li><a href="https://codepen.io/guide/">UK GOV</a></li>
+            </ul>
+          </li>
+          <li class="big-list-item substep" style="margin-top:110px;">
+            <ul>
+              <li><a href="http://carbondesignsystem.com/">IBM</a></li>
+              <li><a href="https://www.lightningdesignsystem.com/">Saleforce</a></li>
+              <li><a href="http://www.audi.com/ci/en/guides/user-interface/introduction.html#">Audi</a></li>
+              <li><a href="https://polaris.shopify.com/">Shopify</a></li>
+            </ul>
+          </li>
+        </ul>
       </div>
-    </div>
-
-    <div class="step" data-x="0" data-y="25000" data-scale="6">
-      <img style="margin: 0 auto; display:block;" width="1200px" src="graphCiconia.svg"/></img>
-    </div>
-
-    <div class="step" data-x="0" data-y="30000" data-scale="3">
-      <h1 class="big-title">Ciconia</h1>
-      <small class="big-sub sub-title">Rendre la femme <b class='rotate'>actrice</b><br/> de sa grossesse</small>
-    </div>
-    <div class="step" data-x="0" data-y="35000" data-scale="3">
-      <img style="display:inline-block;" width="300px" src="screen1.png"/></img>
-      <img style="display:inline-block;" width="300px" src="screen2.jpg"/></img>
-
-    </div>
-    <div class="step" data-x="0" data-y="40000" data-scale="3">
-      <small class="big-sub sub-title">Acquisition</small>
-
-      <div class="two-cols">
-        <div class="wrapper">
-          <!-- <img style="margin: 0 auto;margin-bottom: 20px; display:block;" width="150px" src="stethoscope.svg"/></img> -->
-          <div class="circle first">
-            <h6>Live stream</h6>
-            <small class="big-sub sub-title">Echange avec des <b>experts medicaux</b></small>
-          </div>
-        </div>
-        <div class="wrapper">
-          <!-- <img style="margin: 0 auto;margin-bottom: 20px; display:block;" width="150px" src="stethoscope.svg"/></img> -->
-          <div class="circle last">
-            <h6>Vente privée</h6>
-            <small class="big-sub sub-title"><b>Vente flash</b> d'abonnement</small>
-          </div>
-        </div>
+      <!--
+      <div id="ing" class="step" data-x="3500" data-y="-850" data-rotate="270" data-scale="6">
+      <p>by <b class="positioning">positioning</b>, <b class="rotating">rotating</b> and <b class="scaling">scaling</b> them on an infinite canvas</p>
       </div>
+      <div id="imagination" class="step" data-x="6700" data-y="-300" data-scale="6">
+      <p>the only <b>limit</b> is your <b class="imagination">imagination</b></p>
+      </div>
+      <div id="source" class="step" data-x="6300" data-y="2000" data-rotate="20" data-scale="4">
+      <p>want to know more?</p>
+      <q><a href="http://github.com/bartaz/impress.js">use the source</a>, Luke!</q>
+      </div>
+      <div id="one-more-thing" class="step" data-x="6000" data-y="4000" data-scale="2">
+      <p>one more thing...</p>
+      </div>
+      -->
+      <script src="js/jquery.js"></script>
+      <script src="js/lodash.js"></script>
+      <script src="js/jquery.easing.js"></script>
+      <script src="js/jquery.countto.js"></script>
+      <script src="js/moment.js"></script>
+      <script src="js/impress.js"></script>
+      <script src="js/tweenlite.js"></script>
+      <script src="js/particles2D.js"></script>
+      <script src="js/confetti_cannon.js"></script>
+      <script src="js/main.js"></script>
     </div>
-    <div class="step" data-x="0" data-y="45000" data-scale="3">
-      <small class="big-sub sub-title">Business Model</small>
-      <h1 class="big-title">B2C</h1>
-      <small class="big-sub sub-title">Abonnement <b>15€ / mois</b><br/> + <b>sauvegarde</b> des donnees de sante<br/>+ <b>3 mois gratuits</b> après acouchement</small>
-      <!-- <small class="big-sub sub-title">Une femme dépense en moyenne<br/> <b>2000 €</b> par grossesse</small> -->
-    </div>
-    <div class="small step" data-x="0" data-y="50000" data-scale="3">
-      <!-- <h6>L'équipe</h6> -->
-    <div class="guy">
-      <img src="mina.jpg"/></img>
-      <h6>Amina</h6>
-      <small>Gynécologue</small>
-    </div>
-    <div class="guy">
-      <img src="luis.jpg"/></img>
-      <h6>Luis</h6>
-      <small>Pedopsy</small>
-    </div>
-    <div class="guy">
-      <img src="aurelie.png"/></img>
-      <h6>Aurelie</h6>
-      <small>Avocate</small>
-    </div>
-    <div class="guy">
-      <img src="steph.jpg"/></img>
-      <h6>Steph</h6>
-      <small>Developpeur</small>
-    </div>
-    <div class="guy">
-      <img src="kwame.jpg"/></img>
-      <h6>Kwame</h6>
-      <small>Admin sys</small>
-    </div>
-    <div class="guy">
-      <img src="bart.jpg"/></img>
-      <h6>Barth</h6>
-      <small>Developpeur</small>
-    </div>
-    <div class="guy">
-      <img src="thib.jpg"/></img>
-      <h6>Thibaud</h6>
-      <small>Designer</small>
-    </div>
-    <div class="guy">
-      <img src="jp.jpeg"/></img>
-      <h6>JP</h6>
-      <small>Illustrateur</small>
-    </div>
-    </div>
-    <!-- <div class="step" data-x="0" data-y="48000" data-scale="6">
-      <h6>Ouverture et ambition</h6>
-      <p>Pour la suite on va faire ça = = = = =  =</p>
-    </div> -->
-    <div class="step" data-x="0" data-y="53000" data-scale="3">
-      <h1 class="big-title">Merci !</h1>
-      <h5 class="big-sub sub-title">contact@ciconia.io</h5>
-      <h6 class="big-sub sub-title"><b><span class="nb-baby"></span> Bébés sont nés</b><br/> pendant cette présentation</h6>
-    </div>
-    <div class="step" data-x="0" data-y="0" data-scale="50"></div>
-
-    <!-- <div id="ing" class="step" data-x="3500" data-y="-850" data-rotate="270" data-scale="6">
-        <p>by <b class="positioning">positioning</b>, <b class="rotating">rotating</b> and <b class="scaling">scaling</b> them on an infinite canvas</p>
-    </div>
-
-    <div id="imagination" class="step" data-x="6700" data-y="-300" data-scale="6">
-        <p>the only <b>limit</b> is your <b class="imagination">imagination</b></p>
-    </div>
-
-    <div id="source" class="step" data-x="6300" data-y="2000" data-rotate="20" data-scale="4">
-        <p>want to know more?</p>
-        <q><a href="http://github.com/bartaz/impress.js">use the source</a>, Luke!</q>
-    </div>
-
-    <div id="one-more-thing" class="step" data-x="6000" data-y="4000" data-scale="2">
-        <p>one more thing...</p>
-    </div> -->
-
-    <script src="js/jquery.js"></script>
-    <script src="js/jquery.easing.js"></script>
-    <script src="js/jquery.countto.js"></script>
-    <script src="js/moment.js"></script>
-    <script src="js/impress.js"></script>
-    <script>
-
-      var impress = impress().init();
-      var startTime = moment(new Date());
-
-      if ("ontouchstart" in document.documentElement) {
-        document.querySelector(".hint").innerHTML = "<p>Tap on the left or right to navigate</p>";
-      }
-
-      function requestFullScreen() {
-
-        var el = document.body;
-
-        // Supports most browsers and their versions.
-        var requestMethod = el.requestFullScreen || el.webkitRequestFullScreen
-        || el.mozRequestFullScreen || el.msRequestFullScreen;
-
-        if (requestMethod) {
-
-          // Native full screen.
-          requestMethod.call(el);
-
-        } else if (typeof window.ActiveXObject !== "undefined") {
-
-          // Older IE.
-          var wscript = new ActiveXObject("WScript.Shell");
-
-          if (wscript !== null) {
-            wscript.SendKeys("{F11}");
-          }
-        }
-      }
-
-      $(document).ready(function(){
-        $("#fullscreen").click(function(){
-          requestFullScreen();
-          console.log(1);
-        });
-        $("body").addClass("blue");
-      });
-
-
-
-      var numberWithSpaces = function(x) {
-        return Math.round(x).toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
-      }
-
-      var activeCounter = function() {
-        $(".sunburst").addClass("-hidden");
-        window.setTimeout(function(){
-          if($("#step-2.active").length) {
-            $(".active .count-to-0-1").counter({
-              autoStart: true,
-              duration: 1500,
-              countFrom: 0,
-              countTo: 1000000,
-              runOnce: true,
-              placeholder: "0",
-              easing: "easeOutExpo",
-              numberFormatter: function(number) {
-                return numberWithSpaces( number );
-              }
-            });
-          }
-          else if($("#step-3.active").length) {
-            $(".active .count-to-1-1").counter({
-              autoStart: true,
-              duration: 1500,
-              countFrom: 0,
-              countTo: 140000000,
-              runOnce: true,
-              placeholder: "0",
-              easing: "easeOutExpo",
-              numberFormatter: function(number) {
-                return numberWithSpaces( number );
-              }
-            });
-            $(".active .count-to-1-2").counter({
-              autoStart: true,
-              duration: 1500,
-              countFrom: 0,
-              countTo: 800000,
-              runOnce: true,
-              placeholder: "0",
-              easing: "easeOutExpo",
-              numberFormatter: function(number) {
-                return numberWithSpaces( number );
-              }
-            });
-          }
-          else if($("#step-5.active").length) {
-            $(".active .count-to-2-1").counter({
-              autoStart: true,
-              duration: 1500,
-              countFrom: 0,
-              countTo: 50,
-              runOnce: true,
-              placeholder: "0",
-              easing: "easeOutExpo",
-              numberFormatter: function(number) {
-                return numberWithSpaces( number )+ " %";
-              }
-            });
-            $(".active .count-to-2-2").counter({
-              autoStart: true,
-              duration: 1500,
-              countFrom: 0,
-              countTo: 34,
-              runOnce: true,
-              placeholder: "0",
-              easing: "easeOutExpo",
-              numberFormatter: function(number) {
-                return numberWithSpaces( number )+ " %";
-              }
-            });
-            $(".active .count-to-2-3").counter({
-              autoStart: true,
-              duration: 1500,
-              countFrom: 0,
-              countTo: 20,
-              runOnce: true,
-              placeholder: "0",
-              easing: "easeOutExpo",
-              numberFormatter: function(number) {
-                return numberWithSpaces( number ) + " %";
-              }
-            });
-          }
-          else if($("#step-8.active").length)
-          {
-            $("body").addClass("pink");
-          }
-          else if($("#step-13.active").length)
-          {
-            calcNbBaby();
-            $(".sunburst").removeClass("-hidden");
-          }
-          if($("#step-1.active").length || $("#step-7.active").length || $("#step-14.active").length || $("#title.active").length ) {
-            $("body").removeClass("pink");
-          }
-        }, 500);
-      }
-
-      var oldNbBaby = 0;
-
-      var calcNbBaby = function() {
-        var endTime = moment(new Date());
-        var duration = moment.duration(endTime.diff(startTime));
-        var nbNbaby = 0;
-        console.log(duration.format("h:mm:ss"));
-        duration = duration.format("h:mm:ss");
-        nbBaby = duration * 4;
-        $(".nb-baby").counter({
-          autoStart: true,
-          duration: 1500,
-          countFrom: oldNbBaby,
-          countTo: nbBaby,
-          runOnce: true,
-          placeholder: "0",
-          easing: "easeOutExpo",
-          numberFormatter: function(number) {
-            return numberWithSpaces( number );
-          }
-        });
-        $(".nb-baby").html(nbBaby * 4);
-        oldNbBaby = nbBaby;
-
-      };
-
-      window.setInterval(function() {
-        calcNbBaby();
-      }, 1500);
-
-      $("body").keydown(function (event) {
-        keyReport(event);
-      });
-
-      function keyReport(event) {
-        if (event.which == 10 || event.which == 13) {
-          event.preventDefault();
-        }
-        switch (event.which) {
-          case 0:
-          console.log("event.which not sure");
-          break;
-          case 32:
-          console.log(" Spacebar");
-          break;
-          case 13:
-          console.log(" Enter");
-          break;
-          case 27:
-          console.log(" Escape");
-          break;
-          case 35:
-          console.log(" End");
-          break;
-          case 36:
-          console.log(" Home");
-          break;
-          case 37:
-          console.log(" Left");
-          activeCounter();
-          break;
-          case 38:
-          activeCounter();
-          console.log(" Up");
-          break;
-          case 39:
-          console.log(" Right");
-          activeCounter();
-          break;
-          case 40:
-          console.log(" Down");
-          activeCounter();
-          break;
-        }
-      }
-
-    </script>
-
   </body>
-
 </html>
